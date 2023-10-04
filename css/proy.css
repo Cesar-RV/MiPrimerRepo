@@ -1,0 +1,448 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    background-color: rgba(188, 190, 189, 0.945);
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{font-size: 3em;}
+h2{font-size: 2.5em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(234, 236, 235);
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: #4364B5;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.8em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: #4364B5;
+}
+
+#proyecto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 70vh;
+    background-image: linear-gradient(0deg,rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("../img/tes.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center ;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#proyecto .tesi{
+    color: #fff;
+    text-align: center;
+}
+
+#proyecto .tes{
+    width: 75%;
+    font-size: 1em;
+    padding: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: #fff;
+    text-align: justify;
+    margin: 10px;
+    border-radius: 12px;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(39, 39, 38, 0.3) 0%);
+    box-shadow:  rgba(19, 18, 18, 0.9) 0px 0px 10px;
+}
+
+#proyecto p{
+    font-size: 1em;
+    padding: 10px;
+    padding-top: 10px;
+    color: #fff;
+}
+
+#met .metodologia{
+    padding: 10px;
+    color: #000;
+    text-align: justify;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 10px; 
+    margin-top: 30px;
+}
+
+#met h2{
+    font-size: 2.5em;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#met p {
+    font-size: 1em;
+    padding-top: 20px;
+}
+
+#proceso h2{
+    font-size: 2em;
+    text-align: center;
+}
+
+#proceso p {
+    font-size: 1em;
+    padding-top: 15px;
+}
+
+#proceso .fase1{
+    padding: 10px;
+    color: #000;
+    text-align: justify;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 10px; 
+    margin-top: 30px;
+}
+
+#proceso .fase2{
+    padding: 10px;
+    color: #000;
+    text-align: justify;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin:10px; 
+    margin-top: 10px;
+}
+
+#proceso .fase3{
+    padding: 10px;
+    color: #000;
+    text-align: justify;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 10px; 
+    margin-top: 30px;
+}
+
+#proceso .fase4{
+    padding: 10px;
+    color: #000;
+    text-align: justify;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 10px; 
+    margin-top: 30px;
+}
+
+#proceso .fase5{
+    padding: 10px;
+    color: #000;
+    text-align: justify;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 10px; 
+    margin-top: 30px;
+}
+
+#proceso .fase6{
+    padding: 10px;
+    color: #000;
+    text-align: justify;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 10px; 
+    margin-top: 30px;
+}
+
+@media (min-width: 700px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0%;
+        padding-right: 20px;
+    }
+
+    #proyecto h1{
+        margin-top: 90px;
+    } 
+
+    #proyecto p{
+        font-size: 1.2em;
+    }
+
+    #proyecto .tes{
+        width: 75%;
+        height: 32vh;
+    }
+
+    #met .metodologia{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #met .metod{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: justify;
+    }
+
+    #met h2{
+        margin-top: 0px;
+    }
+
+    #met .img-met{
+        background-image: url("../img/metodologia.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 400px;
+        width: 350px;
+        display: block;
+        margin-top: 10vh;
+        border-radius: 10px;
+        border: solid 2px #000;
+        box-shadow: rgba(239, 241, 239, 0.945) 0px 0px 20px;
+    }
+
+    #proceso .fase1{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #proceso h2{
+        margin-top: 50px;
+        text-align: center;
+        font-size: 3em;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    #proceso h3{
+        font-size: 2em;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+
+    #proceso .fase-1{
+        margin-top: 0px;
+        width: 60%;
+        text-align: initial;
+        padding-left: 30px;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: justify;
+    }
+
+    #proceso .img-proc{
+        background-image: url("../img/Edificiof.png");
+        background-size: cover;
+        background-position: center center;
+        height: 45vh;
+        width: 500px;
+        display: block;
+        margin-top: 10vh;
+        border-radius: 10px;
+        border: solid 2px #000;
+        box-shadow: rgba(239, 241, 239, 0.945) 0px 0px 20px;
+    }
+
+    #proceso .fase2{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #proceso h3{
+        font-size: 2.5em;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+
+    #proceso .fase-2{
+        margin-top: 0px;
+        width: 50%;
+        text-align: center;
+        padding-left: 30px;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: justify;
+    }
+
+    #proceso .img-proc2{
+        background-image: url("../img/subred.png");
+        background-size: cover;
+        background-position: center center;
+        height: 50vh;
+        width: 50%;
+        display: block;
+        margin-top: 10vh;
+        border-radius: 10px;
+        border: solid 2px #000;
+        box-shadow: rgba(239, 241, 239, 0.945) 0px 0px 20px;
+    }
+
+    #proceso .fase3{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #proceso .fase-3{
+        margin-top: 0px;
+        width: 40%;
+        text-align: center;
+        padding-left: 30px;
+        padding: 0px 30px;
+        flex-direction: column;
+        justify-content: center;
+        text-align: justify;
+    }
+
+    #proceso .img-proc3{
+        background-image: url("../img/presu.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 350px;
+        width: 35%;
+        display: block;
+        border-radius: 10px;
+        border: solid 2px #000;
+        box-shadow: rgba(239, 241, 239, 0.945) 0px 0px 20px;
+    }
+
+    #proceso .fase4{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #proceso .fase-4{
+        margin-top: 0px;
+        width: 40%;
+        text-align: center;
+        padding-left: 30px;
+        padding: 0px 30px;
+        flex-direction: column;
+        justify-content: center;
+        text-align: justify;
+    }
+
+    #proceso .img-proc4{
+        background-image: url("../img/vlsm.png");
+        background-size: cover;
+        background-position: center center;
+        height: 370px;
+        width: 35%;
+        display: block;
+        border-radius: 10px;
+        border: solid 2px #000;
+        box-shadow: rgba(239, 241, 239, 0.945) 0px 0px 20px;
+    }
+
+    #proceso .fase5{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #proceso .fase-5{
+        margin-top: 0px;
+        width: 40%;
+        text-align: center;
+        padding-left: 30px;
+        padding: 0px 30px;
+        flex-direction: column;
+        justify-content: center;
+        text-align: justify;
+    }
+
+    #proceso .img-proc5{
+        background-image: url("../img/excel.png");
+        background-size: cover;
+        background-position: center center;
+        height: 62vh;
+        width: 70%;
+        display: block;
+        border-radius: 10px;
+        border: solid 2px #000;
+        box-shadow: rgba(239, 241, 239, 0.945) 0px 0px 20px;
+    }
+    
+    #proceso .fase6{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #proceso .fase-6{
+        margin-top: 0px;
+        width: 40%;
+        text-align: center;
+        padding-left: 30px;
+        padding: 0px 30px;
+        flex-direction: column;
+        justify-content: center;
+        text-align: justify;
+    }
+
+    #proceso .img-proc6{
+        background-image: url("../img/topo.png");
+        background-size: cover;
+        background-position: center center;
+        height: 350px;
+        width: 50%;
+        display: block;
+        border-radius: 10px;
+        border: solid 2px #000;
+        box-shadow: rgba(239, 241, 239, 0.945) 0px 0px 20px;
+    }
+}
